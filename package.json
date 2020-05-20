@@ -1,0 +1,43 @@
+{
+  "name": "parcel_test",
+  "version": "1.0.0",
+  "description": "testing parcel as a bundler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelytakei/parcel_test.git"
+  },
+  "author": "Rafael Takei",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/rafaelytakei/parcel_test/issues"
+  },
+  "homepage": "https://github.com/rafaelytakei/parcel_test#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "parcel-plugin-custom-dist-structure": "^1.1.11"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "keywords": [],
+  "customDistStructure": {
+    "config": {
+      ".js": "js",
+      "images": [
+        ".jpg",
+        ".png"
+      ],
+      ".fileExtension": "folder/in/dist",
+      "folder/in/dist": [ ".file", ".extensions" ]
+    },
+    "options": {
+      "development": true
+    }
+  }
+}
